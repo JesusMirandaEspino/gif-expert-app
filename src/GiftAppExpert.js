@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { AddCategory } from './components/AddCategory';
 
 
 const GiftAppExpert  = (   ) => {
@@ -20,6 +21,8 @@ const GiftAppExpert  = (   ) => {
                     <h1> GiftAppExpert </h1>
                     <hr></hr>
                 </div>
+
+                <AddCategory />
 
                 <div className="col-full-12">
                     <ol>
