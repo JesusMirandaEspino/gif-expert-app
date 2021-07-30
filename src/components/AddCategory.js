@@ -1,7 +1,5 @@
 import React, { useState } from 'react';
 
-
-
 export const AddCategory = (  ) => {
 
     // Valor inicial del input
@@ -13,6 +11,7 @@ export const AddCategory = (  ) => {
         SetInputValue( e.target.value );
     }
 
+    // funcion para prevenir el evento normal dal hacer submit del formulario
     const handleSubmit = (e) => {
         e.preventDefault();
     }
