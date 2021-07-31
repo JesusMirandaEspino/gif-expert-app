@@ -8,11 +8,12 @@ const GiftAppExpert  = (   ) => {
 
     // no se declara asi const categorias = [ 'One Punch', 'Samurai X', 'Dragon Ball' ];
     const [ categories, setCategories ] = useState( [ 'One Punch', 'Samurai X', 'Dragon Ball' ] ); 
+    /*
 
     const handleAdd = () => {
         setCategories( cat => [ ...cat,  'Demon Slayer'] );
     }
-
+*/
     return (
         <section className="fila">  
             <div className="contenedor1">
@@ -22,7 +23,7 @@ const GiftAppExpert  = (   ) => {
                     <hr></hr>
                 </div>
 
-                <AddCategory />
+                <AddCategory setCategories={   setCategories  }/>
 
                 <div className="col-full-12">
                     <ol>
@@ -35,7 +36,7 @@ const GiftAppExpert  = (   ) => {
                 </div>
 
                 <div className="col-full-12">
-                        <button onClick={ handleAdd } >Agregar</button>
+                        
                 </div>
 
             </div>
