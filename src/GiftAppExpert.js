@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { AddCategory } from './components/AddCategory';
+import { GifGrid } from './components/GifGrid';
 
 
 const GiftAppExpert  = (   ) => {
@@ -7,9 +8,9 @@ const GiftAppExpert  = (   ) => {
    // arreglo de categorias
 
     // no se declara asi const categorias = [ 'One Punch', 'Samurai X', 'Dragon Ball' ];
-    const [ categories, setCategories ] = useState( [ 'One Punch', 'Samurai X', 'Dragon Ball' ] ); 
-    /*
+    const [ categories, setCategories ] = useState( [ 'One Punch'  ] ); 
 
+    /* Funcion de base
     const handleAdd = () => {
         setCategories( cat => [ ...cat,  'Demon Slayer'] );
     }
@@ -29,7 +30,9 @@ const GiftAppExpert  = (   ) => {
                     <ol>
                         {
                             categories.map( category => {
-                                return <li  key={category} > { category } </li>
+                                return <GifGrid 
+                                        key={ category }
+                                        category={ category }/>
                             } )
                         }
                     </ol>
