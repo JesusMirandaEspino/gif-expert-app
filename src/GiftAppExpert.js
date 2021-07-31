@@ -39,7 +39,6 @@ const GiftAppExpert  = (   ) => {
                 </div>
 
                 <div className="col-full-12">
-                        
                 </div>
 
             </div>
