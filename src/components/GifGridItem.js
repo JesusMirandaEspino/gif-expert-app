@@ -11,8 +11,11 @@ export default function GifGridItem( { id, title, url } ) {
 
                 <div className="col-full-12" >
 
-                    <img  src={ url} title={  title } />
-                    <p>{ title }</p> 
+                    <div className="card">
+                        <img  src={ url} title={  title } />
+                        <p>{ title }</p> 
+                    </div>
+
 
                 </div>
 
