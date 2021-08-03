@@ -1,17 +1,19 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import GifGridItem from './GifGridItem';
-import { getGisft } from '../helpers/getGif';
+
+import { useFetchGifs } from '../hooks/useFetchGifs';
 
 export const GifGrid = ({ category }) => {
 
-    const  [ images, setImages ] =  useState([]);
-
-    useEffect( () => {
-        getGisft(  category )
-        .then( imgs => setImages( imgs )  );
-    }, [ ] );
+const { data: images, loading }  = useFetchGifs( category );
 
 
+
+/*
+
+
+
+*/
 
     return (
         <section className="fila">
