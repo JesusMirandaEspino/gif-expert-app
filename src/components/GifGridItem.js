@@ -11,7 +11,7 @@ export default function GifGridItem( { id, title, url } ) {
 
                 <div className="col-full-12" >
 
-                    <div className="card">
+                    <div className="card  animate__animated animate__fadeIn">
                         <img  src={ url} title={  title } />
                         <p>{ title }</p> 
                     </div>

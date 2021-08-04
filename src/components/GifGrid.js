@@ -18,6 +18,10 @@ const { data: images, loading }  = useFetchGifs( category );
     return (
         <section className="fila">
             <div className="contenedor1" >
+                
+                <div className="col-full-12  animate__animated animate__flash" >
+                    {  loading && <p>Loading</p> }
+                </div>
                 <div className="col-full-12" >
                     <h2> { category } </h2>  
                 </div>
