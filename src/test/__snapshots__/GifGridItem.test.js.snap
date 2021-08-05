@@ -13,8 +13,14 @@ exports[`Pruebas en el archivo <GifGridItem /> Debe mostrar el componente correc
       <div
         className="card  animate__animated animate__fadeIn"
       >
-        <img />
-        <p />
+        <img
+          alt="Es un titulo"
+          src="https://localhostesunaurl"
+          title="Es un titulo"
+        />
+        <p>
+          Es un titulo
+        </p>
       </div>
     </div>
   </div>

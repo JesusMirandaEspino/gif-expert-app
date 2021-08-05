@@ -1,5 +1,5 @@
 import React from 'react'
-
+import PropTypes from 'prop-types';
 export default function GifGridItem( { id, title, url } ) {
 
 
@@ -23,4 +23,12 @@ export default function GifGridItem( { id, title, url } ) {
             
         </section  >
     )
+}
+
+
+
+
+GifGridItem.propTypes = { 
+    title: PropTypes.string.isRequired,
+    url: PropTypes.string.isRequired
 }
