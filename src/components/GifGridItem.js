@@ -12,7 +12,7 @@ export default function GifGridItem( { id, title, url } ) {
                 <div className="col-full-12" >
 
                     <div className="card  animate__animated animate__fadeIn">
-                        <img  src={ url} title={  title } />
+                        <img  src={ url} title={  title }   alt={ title } />
                         <p>{ title }</p> 
                     </div>
 
