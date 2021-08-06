@@ -10,12 +10,13 @@ export const AddCategory = ( {  setCategories } ) => {
     const handleInputChange = ( e ) => {
         SetInputValue( e.target.value );
 
-        console.log(  'handleInputChange llamado' );
+
     }
 
     // funcion para prevenir el evento normal dal hacer submit del formulario
     const handleSubmit = (e) => {
         e.preventDefault();
+        console.log(  'handleSubmit llamado' );
 
         if( InputValue.trim().length > 2 ){
             setCategories( cat => [   InputValue, ...cat  ] );
