@@ -9,6 +9,8 @@ export const AddCategory = ( {  setCategories } ) => {
     // funcion que cambia el valor del input
     const handleInputChange = ( e ) => {
         SetInputValue( e.target.value );
+
+        console.log(  'handleInputChange llamado' );
     }
 
     // funcion para prevenir el evento normal dal hacer submit del formulario

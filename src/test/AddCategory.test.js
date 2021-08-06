@@ -6,16 +6,31 @@ import { AddCategory }  from '../components/AddCategory';
 describe( 'Pruebas con el componente <AddCategory />', () => {
 
 
-    const  setCategories = () => {}
+    const  setCategories = () => {};
+
+    const wrappers = shallow( <AddCategory  setCategories={ setCategories } />    );
 
     test('debe de mostrarse correctamente ', () => {
         
 
-        const wrappers = shallow( <AddCategory  setCategories={ setCategories } />    );
+       
 
         expect( wrappers ).toMatchSnapshot();
 
+    });
+
+
+    
+    test('debe de cambiar la caja de texto  ', () => {
+        
+
+        const input  = wrappers.find( 'input' );
+        const value = 'Hola Mundo';
+
+        input.simulate( 'change', { target: { value } } );
+
     })
+
     
 
 
