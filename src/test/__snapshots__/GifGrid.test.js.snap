@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas con <GifGrid /> debe de mostrarse correctamente  1`] = `
+<section
+  className="fila"
+>
+  <div
+    className="contenedor1"
+  >
+    <div
+      className="col-full-12  animate__animated animate__flash"
+    >
+      <p>
+        Loading
+      </p>
+    </div>
+    <div
+      className="col-full-12"
+    >
+      <h2>
+         
+        one punch
+         
+      </h2>
+    </div>
+    <div
+      className="col-full-12"
+    />
+  </div>
+</section>
+`;
