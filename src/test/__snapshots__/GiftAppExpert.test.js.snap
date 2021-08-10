@@ -1,0 +1,70 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas  con componente <GiftAppExpert /> Debe de mostrar el componente correctamente  1`] = `
+<section
+  className="fila"
+>
+  <div
+    className="contenedor1"
+  >
+    <div
+      className="col-full-12"
+    >
+      <h1>
+         GiftAppExpert 
+      </h1>
+      <hr />
+    </div>
+    <AddCategory
+      setCategories={[Function]}
+    />
+    <div
+      className="col-full-12"
+    >
+      <ol />
+    </div>
+    <div
+      className="col-full-12"
+    />
+  </div>
+</section>
+`;
+
+exports[`Pruebas  con componente <GiftAppExpert /> Debe de mostrar una lista de categorias 1`] = `
+<section
+  className="fila"
+>
+  <div
+    className="contenedor1"
+  >
+    <div
+      className="col-full-12"
+    >
+      <h1>
+         GiftAppExpert 
+      </h1>
+      <hr />
+    </div>
+    <AddCategory
+      setCategories={[Function]}
+    />
+    <div
+      className="col-full-12"
+    >
+      <ol>
+        <GifGrid
+          category="one punch"
+          key="one punch"
+        />
+        <GifGrid
+          category="dragon ball"
+          key="dragon ball"
+        />
+      </ol>
+    </div>
+    <div
+      className="col-full-12"
+    />
+  </div>
+</section>
+`;

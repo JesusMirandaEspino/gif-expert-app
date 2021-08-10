@@ -3,12 +3,12 @@ import { AddCategory } from './components/AddCategory';
 import { GifGrid } from './components/GifGrid';
 
 
-const GiftAppExpert  = (   ) => {
+const GiftAppExpert  = ( { defaultCategories = [] } ) => {
 
    // arreglo de categorias
 
     // no se declara asi const categorias = [ 'One Punch', 'Samurai X', 'Dragon Ball' ];
-    const [ categories, setCategories ] = useState( [ 'One Punch'  ] ); 
+    const [ categories, setCategories ] = useState(  defaultCategories );
 
     /* Funcion de base
     const handleAdd = () => {
@@ -16,7 +16,7 @@ const GiftAppExpert  = (   ) => {
     }
 */
     return (
-        <section className="fila">  
+        <section className="fila">
             <div className="contenedor1">
 
                 <div className="col-full-12">
