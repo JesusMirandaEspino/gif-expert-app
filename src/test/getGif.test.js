@@ -8,7 +8,7 @@ import {getGisft} from '../helpers/getGif';
 describe( 'Pruebas con el getGif fecth', () => { 
 
 
-    test( 'Debe traer al menos 10 elementos', async () => { 
+    test( 'Debe traer al menos 10 elementos', async () => {
 
         const gift = await getGisft( 'one ponche' );
 
@@ -18,7 +18,7 @@ describe( 'Pruebas con el getGif fecth', () => {
     });
 
 
-    test( 'Debe ser enviada la categoria', async () => { 
+    test( 'Debe ser enviada la categoria', async () => {
 
         const gift = await getGisft( '' );
 
